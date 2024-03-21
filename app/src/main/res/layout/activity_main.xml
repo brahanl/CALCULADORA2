@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/valor1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/valor2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valor1EditText"
+        android:layout_marginTop="16dp"
+        android:hint="Valor 2"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/sumarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valor2EditText"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#49CFBB"
+        android:text="Sumar"
+        android:onClick="sumar" />
+
+    <Button
+        android:id="@+id/restarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sumarButton"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#49CFBB"
+        android:text="Restar"
+        android:onClick="restar" />
+
+    <Button
+        android:id="@+id/multiplicarButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="#49CFBB"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restarButton"
+        android:layout_marginTop="16dp"
+        android:text="Multiplicar"
+        android:onClick="multiplicar" />
+
+    <Button
+        android:id="@+id/dividirButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#49CFBB"
+        android:layout_below="@id/multiplicarButton"
+        android:layout_marginTop="16dp"
+        android:text="Dividir"
+        android:onClick="dividir" />
+
+    <Button
+        android:id="@+id/potenciaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#49CFBB"
+        android:layout_below="@id/dividirButton"
+        android:layout_marginTop="16dp"
+        android:text="Potencia"
+        android:onClick="potencia" />
+
+    <Button
+        android:id="@+id/fibonacciButton"
+        android:layout_width="match_parent"
+        android:backgroundTint="#49CFBB"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/potenciaButton"
+        android:layout_marginTop="16dp"
+        android:text="Fibonacci"
+        android:onClick="fibonacci" />
+
+    <Button
+        android:id="@+id/factorialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#49CFBB"
+        android:layout_below="@id/fibonacciButton"
+        android:layout_marginTop="16dp"
+        android:text="Factorial"
+        android:onClick="factorial" />
+
+</RelativeLayout>
